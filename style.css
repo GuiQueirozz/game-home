@@ -94,7 +94,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 3.5rem;
   gap: 9rem;
-  margin-top: 25rem;
+  margin-top: 20rem;
 }
 
 .card__article {
@@ -121,19 +121,26 @@ img {
   opacity: 0;
   transition: opacity 1s 1s;
   border: 2px solid #555;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   flex-direction: column; /* organiza em coluna */
+  align-items: center;    /* centraliza horizontal */
+  justify-content: center;/* centraliza vertical */
+  text-align: center;     /* garante texto centralizado */
+  gap: 0.75rem;           /* espaço entre título, descrição e botão */
+
+  width: 100%;            /* ocupa a largura do card */
+  height: auto;    
  
 
 }
 
 .data-2 .card__data {
   margin-right: 0.8rem;
+  margin-left: 0.8rem;
 }
 
 .data-3 .card__data {
   margin-left: 10rem;
+  
 }
 
 
@@ -141,9 +148,9 @@ img {
 .card__description {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: .75rem;
+  margin-bottom: 1.5rem;
   color: #fff;
-  margin-bottom: 2rem;
+
 
 
   
@@ -153,7 +160,8 @@ img {
   font-size: 1.375rem;
   font-weight: 700;
   color: white;
-  margin-bottom: .75rem;
+  margin-bottom: 0.8rem;
+  
 }
 
 .card__button {
@@ -167,7 +175,9 @@ img {
   background-color: #318b55;
   padding: .2rem 1.5rem 0.2rem 1.5rem;
   text-align: center;
-  
+  margin-right: 2rem;
+
+
 
 
 }
